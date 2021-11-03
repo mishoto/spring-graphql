@@ -1,0 +1,23 @@
+type Competition {
+    id: ID!
+    name: String!
+    difficulty: Difficulty!
+    numberOfPlayers: NPlayers!
+    game: String!
+
+}
+
+# Root
+type Query {
+    findAllCompetitions: [Competition]!
+    countAllCompetitions: Int!
+}
+
+# Root
+type Mutation {
+    createCompetition(name: String!,
+                      difficulty: Difficulty,
+                      numberOfPlayers: NPlayers,
+                      game: String): Competition!
+}
+
