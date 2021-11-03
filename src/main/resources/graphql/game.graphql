@@ -1,0 +1,14 @@
+type Game {
+    id: ID!
+    name: String!
+}
+
+# Root
+type Query {
+    findAllGames: [Game]!
+}
+
+# Root
+type Mutation {
+    createPlayer(name: String!): Game!
+}
