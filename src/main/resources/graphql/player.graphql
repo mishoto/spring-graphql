@@ -17,7 +17,7 @@ type Query {
 type Mutation {
     createPlayer(name: String!, age: Int, scores: Int, avatar: String): Player!
     updatePlayer(name: String!, age: Int, scores: Int, avatar: String): Player!
-    deletePlayer(avatar: String): Player!
+    deletePlayer(avatar: String): String!
 
 }
 
