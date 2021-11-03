@@ -19,8 +19,9 @@ CREATE TYPE `num_of_players` AS ENUM (`ONE`, `TWO`, `THREE`, `MULTIPLE`);
 CREATE TABLE `competition` (
   `c_id` int(11) NOT NULL AUTO_INCREMENT,
   `c_name` varchar(255) NOT NULL UNIQUE DEFAULT `CN001`,
-  `c_difficulty` difficulty(12) NOT NULL DEFAULT `EASY`,
-  `c_players` num_of_players(16) NOT NULL DEFAULT `ONE`
+  `c_difficulty` difficulty NOT NULL DEFAULT `EASY`,
+  `c_players` num_of_players NOT NULL DEFAULT `ONE`
   PRIMARY KEY (`c_id`)
   FOREIGN KEY (`g_id`)
+  FOREIGN KEY (`p_id`)
 );
