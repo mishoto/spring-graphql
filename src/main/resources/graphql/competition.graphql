@@ -9,13 +9,13 @@ type Competition {
 }
 
 # Root
-extend type Query {
+type Query {
     findAllCompetitions: [Competition]!
     countAllCompetitions: Int!
 }
 
 # Root
-extend type Mutation {
+type Mutation {
     createCompetition(name: String!,
                       difficulty: Difficulty,
                       numberOfPlayers: NPlayers,

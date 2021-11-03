@@ -7,5 +7,4 @@ public class Game {
     @Id
     private Integer id;
     private String name;
-
 }

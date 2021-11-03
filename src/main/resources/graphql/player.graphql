@@ -8,16 +8,15 @@ type Player {
 }
 
 # Root
-type Query {
-    findAllPlayers: [Player]!
-    countPlayers: Int!
+extend type Query {
+    findAllPlayers: [Player]
+    countPlayers: Int
 }
 
 # Root
-type Mutation {
+extend type Mutation {
     createPlayer(name: String!, age: Int, scores: Int, avatar: String): Player!
     updatePlayer(name: String!, age: Int, scores: Int, avatar: String): Player!
     deletePlayer(avatar: String): String!
-
 }
 

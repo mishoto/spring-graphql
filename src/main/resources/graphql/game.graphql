@@ -5,10 +5,10 @@ type Game {
 
 # Root
 extend type Query {
-    findAllGames: [Game]!
+    findAllGames: [Game]
 }
 
 # Root
 extend type Mutation {
-    createGame(name: String!): Game!
+    createGame(name: String!): Game
 }

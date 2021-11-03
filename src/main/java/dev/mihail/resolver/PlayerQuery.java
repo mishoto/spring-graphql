@@ -4,7 +4,6 @@ import dev.mihail.model.Player;
 import dev.mihail.repository.PlayerRepository;
 import graphql.kickstart.tools.GraphQLQueryResolver;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import java.util.List;
 
 public class PlayerQuery implements GraphQLQueryResolver {

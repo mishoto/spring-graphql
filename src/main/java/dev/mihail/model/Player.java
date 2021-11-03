@@ -11,6 +11,9 @@ public class Player {
     private Integer scores;
     private String avatar;
 
+    public Player() {
+    }
+
     public Player(String name, Integer age, Integer scores, String avatar) {
         this.name = name;
         this.age = age;

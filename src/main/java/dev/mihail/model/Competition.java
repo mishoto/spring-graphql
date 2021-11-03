@@ -1,7 +1,6 @@
 package dev.mihail.model;
 
 import org.springframework.data.annotation.Id;
-
 import java.util.List;
 
 public class Competition {
