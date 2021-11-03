@@ -1,0 +1,6 @@
+enum NPlayers {
+    ONE
+    TWO
+    THREE
+    MULTIPLE
+}
