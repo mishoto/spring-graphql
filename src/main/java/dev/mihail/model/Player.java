@@ -7,11 +7,11 @@ public class Player {
     @Id
     private Integer id;
     private String name;
-    private String age;
+    private Byte age;
     private Integer scores;
     private String avatar;
 
-    public Player(String name, String age, Integer scores, String avatar) {
+    public Player(String name, Byte age, Integer scores, String avatar) {
         this.name = name;
         this.age = age;
         this.scores = scores;
@@ -34,11 +34,11 @@ public class Player {
         this.name = name;
     }
 
-    public String getAge() {
+    public Byte getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(Byte age) {
         this.age = age;
     }
 
