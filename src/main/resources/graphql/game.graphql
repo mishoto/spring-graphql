@@ -4,11 +4,11 @@ type Game {
 }
 
 # Root
-type Query {
+extend type Query {
     findAllGames: [Game]!
 }
 
 # Root
-type Mutation {
-    createPlayer(name: String!): Game!
+extend type Mutation {
+    createGame(name: String!): Game!
 }
