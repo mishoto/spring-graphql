@@ -19,7 +19,7 @@ extend type Mutation {
     createCompetition(name: String!,
                       difficulty: Difficulty,
                       numberOfPlayers: NPlayers,
-                      playerList: ID,
+                      playerList: String,
                       game: String): Competition!
 }
 
